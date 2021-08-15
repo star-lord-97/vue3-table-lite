@@ -97,25 +97,6 @@
         </div>
         <div class="row" v-if="rows.length > 0">
           <div class="col-sm-12 col-md-4">
-            <div role="status" aria-live="polite">
-              {{
-                stringFormat(messages.pagingInfo, setting.offset, setting.limit, total)
-              }}
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <span>{{ messages.pageSizeChangeLabel }}</span>
-            <select v-model="setting.pageSize">
-              <option value="10">10</option>
-              <option value="25">25</option>
-              <option value="50">50</option>
-            </select>
-            <span>{{ messages.gotoPageLabel }}</span>
-            <select v-model="setting.page">
-              <option v-for="n in setting.maxPage" :key="n">{{ n }}</option>
-            </select>
-          </div>
-          <div class="col-sm-12 col-md-4">
             <div
               class="dataTables_paginate paging_simple_numbers"
               id="dataTables-example_paginate"
