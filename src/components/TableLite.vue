@@ -20,7 +20,7 @@
               class="table table-hover table-bordered table-responsive-sm"
               id="dataTables-example"
             >
-              <thead class="thead-dark">
+              <thead class="">
                 <tr>
                   <th v-if="hasCheckbox" class="checkbox-th">
                     <div>
